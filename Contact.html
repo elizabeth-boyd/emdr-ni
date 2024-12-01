@@ -82,32 +82,7 @@
 
         }
     </style>
-    <style type="text/css">
-        a.tooltip {
-            position: relative;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
 
-        a.tooltip span {
-            display: none;
-        }
-
-        a.tooltip:hover span {
-            position: absolute;
-            top: -90px;
-            font-size: 14px;
-            left: 50px;
-            display: block;
-            width: 120px;
-            color: black;
-            background-color: #FFFFFF;
-            border: 1px solid black;
-            border-radius: 8px;
-            padding: 5px;
-        }
-    </style>
     <style>
         /* somehow makes background image resize smoothly */
         body {
@@ -297,6 +272,216 @@
             border-radius: 50% !important;
         }
     </style>
+		<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+    color: #FFF;
+}
+.tooltip:before {
+
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .6s;
+	border-style: solid;
+	border-color: black;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 125%;  
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.tooltip-bottom {
+  top: 135%;
+  left: 50%;  
+  margin-left: -60px;
+}
+
+
+
+.tooltip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.tooltip-top {
+  bottom: 125%;
+  left: 50%;  
+  margin-left: -60px;
+}
+
+
+.tooltip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.tooltip-left {
+  top: -5px;
+  bottom:auto;
+  right: 128%;  
+}
+
+
+.tooltip-left::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+.tooltip .tooltiptext-bottomarrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext-bottomarrow::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white ;
+}
+.tooltip:hover .tooltiptext-bottomarrow {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext-toparrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext-toparrow::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.tooltip:hover .tooltiptext-toparrow {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext-leftarrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+.tooltip .tooltiptext-leftarrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+.tooltip:hover .tooltiptext-leftarrow {
+    visibility: visible;
+}
+.tooltip .tooltiptext-rightarrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+}
+.tooltip .tooltiptext-rightarrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+.tooltip:hover .tooltiptext-rightarrow {
+    visibility: visible;
+}
+	</style>
 
 </head>
 
@@ -407,13 +592,13 @@
                                                                                                             <tr>
                                                                                                                 <th scope="col" width="35%">
                                                                                                                     <table width="58%" height="152" class="roundedCorners">
-                                                                                                                        <tbody>
-                                                                                                                            <tr>
-                                                                                                                                <th bgcolor="#2E881C" scope="col">
-                                                                                                                                    <p><a class="tooltip" href="#" color="#FFFFFF" style="font-size: 14px">Prices from &pound;55 per session. Exact cost will be determined at the end of the initial assessment session.<span>I believe counselling should be accessible for everyone, therefore, I am willing to negotiate cost depending on individual circumstances. Please contact me to discuss.</span></a></p>
-                                                                                                                                </th>
-                                                                                                                            </tr>
-                                                                                                                        </tbody>
+                                                                                                                 <tbody>
+                                                                                                                  <tr>
+                                                                                                             <th bgcolor="#2E881C" scope="col">
+                                                                                      <div class="tooltip">Prices from &pound;55 per session. Exact cost will be determined at the end of the initial assessment session. <span class="tooltiptext tooltip-bottom">I believe counselling should be accessible for everyone, therefore, I am willing to negotiate cost depending on individual circumstances. Please contact me to discuss.</span> </div>
+                                                                                           </th>
+                                                                                          </tr>
+                                                                                          </tbody>
                                                                                                                     </table>
                                                                                                                     <p>&nbsp;</p>
                                                                                                                 </th>
