@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elizabeth Boyd Counselling</title>
+	<link rel="icon" type="image/x-icon" href="https://elizabeth-boyd.github.io/emdr-ni/favicon.ico">
     <link href="css/wextra-style.css" rel="stylesheet" type="text/css">
     <link href="css/extra-style.css" rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -81,40 +82,8 @@
 
         }
     </style>
-    <style type="text/css">
-        a.tooltip {
-            position: relative;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
 
-        a.tooltip span {
-            display: none;
-        }
 
-        a.tooltip:hover span {
-            position: absolute;
-            top: -90px;
-            font-size: 14px;
-            left: 50px;
-            display: block;
-            width: 120px;
-            color: black;
-            background-color: #FFFFFF;
-            border: 1px solid black;
-            border-radius: 8px;
-            padding: 5px;
-        }
-    </style>
-    <style>
-        /* somehow makes background image resize smoothly */
-        body {
-            font-family: sans-serif;
-            height: 50px;
-
-        }
-    </style>
     <style>
         table.roundedCorners {
             border: 0px solid #FFFFFF;
@@ -148,7 +117,7 @@
             overflow: hidden;
             float: left;
             position: fixed;
-            width: 97%;
+            width: 95%;
             transition: top 1.3s;
 
         }
@@ -296,10 +265,221 @@
             border-radius: 50% !important;
         }
     </style>
+		<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+    color: #FFF;
+}
+.tooltip:before {
+
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .6s;
+	border-style: solid;
+	border-color: black;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 125%;  
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;  
+  margin-left: -60px;
+}
+
+
+
+.tooltip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.tooltip-top {
+  bottom: 125%;
+  left: 50%;  
+  margin-left: -60px;
+}
+
+
+.tooltip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.tooltip-left {
+  top: -5px;
+  bottom:auto;
+  right: 128%;  
+}
+
+
+.tooltip-left::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+.tooltip .tooltiptext-bottomarrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext-bottomarrow::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white ;
+}
+.tooltip:hover .tooltiptext-bottomarrow {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext-toparrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext-toparrow::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.tooltip:hover .tooltiptext-toparrow {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext-leftarrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+.tooltip .tooltiptext-leftarrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+.tooltip:hover .tooltiptext-leftarrow {
+    visibility: visible;
+}
+.tooltip .tooltiptext-rightarrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+}
+.tooltip .tooltiptext-rightarrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+.tooltip:hover .tooltiptext-rightarrow {
+    visibility: visible;
+}
+	</style>
 
 </head>
 
-<body>
+<body><table width="98%" align="center"><tbody>
+	<tr>
     <header>
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
@@ -326,13 +506,16 @@
                     <table width="80%" border="0">
                         <tbody>
                             <tr>
+								
                                 <picture>
-                                    <source media="(min-width: 500px)" srcset="images/long-logo.png">
+                                    <source media="(min-width: 800px)" srcset="images/long-logo.png">
+									<source media="(min-width: 500px)" srcset="images/Logo.png">
                                     <source media="(min-width: 300px)" srcset="images/facebook1.png">
                                     <source media="(min-width: 200px)" srcset="images/Logo-small.jpg">
                                     <img src="images/Logo.png" align="center" width="80%" height="auto" alt>
-									
-								</picture>
+
+                                </picture>
+						
                             </tr>
                         </tbody>
                     </table>
@@ -381,7 +564,7 @@
                                                                         <tbody>
                                                                             <tr>
                                                                                 <th width="10%" height="279" scope="col">&nbsp;</th>
-                                                                                <th width="82%" align="center" valign="top" scope="col">
+                                                                                <th width="80%" align="center" valign="top" scope="col">
                                                                                     <table width="100%" class="roundedCorners">
                                                                                         <tbody>
                                                                                             <tr>
@@ -389,7 +572,7 @@
                                                                                                     <p><u>Contact Information</u></p>
                                                                                                     <p>I'm available for appointments, which can be booked by emailing me or if you prefer, you can telephone me.</p>
                                                                                                     <p><a href="ccs.lizb@gmail.com" style="color: #FFFFFF; font-size: 18px;">email me at:- ccs.lizb@gmail.com</a></p>
-                                                                                                    <p><a href="07762614830">Call me on 07762614830</a></p>
+                                                                                                    <p><a href="tel:07762614830">Call me on 07762614830</a></p>
                                                                                                 </th>
                                                                                             </tr>
                                                                                         </tbody>
@@ -404,15 +587,15 @@
                                                                                                     <table width="100%" border="0">
                                                                                                         <tbody>
                                                                                                             <tr>
-                                                                                                                <th scope="col" width="35%">
-                                                                                                                    <table width="58%" height="152" class="roundedCorners">
-                                                                                                                        <tbody>
-                                                                                                                            <tr>
-                                                                                                                                <th bgcolor="#2E881C" scope="col">
-                                                                                                                                    <p><a class="tooltip" href="#" color="#FFFFFF" style="font-size: 14px">Prices from &pound;55 per session. Exact cost will be determined at the end of the initial assessment session.<span>I believe counselling should be accessible for everyone, therefore, I am willing to negotiate cost depending on individual circumstances. Please contact me to discuss.</span></a></p>
-                                                                                                                                </th>
-                                                                                                                            </tr>
-                                                                                                                        </tbody>
+                                                                                                                <th scope="col" width="30%">
+                                                                                                                    <table width="54%" height="152" class="roundedCorners">
+                                                                                                                 <tbody>
+                                                                                                                  <tr>
+                                                                                                             <th bgcolor="#2E881C" scope="col">
+                                                                                      <div class="tooltip">Prices from &pound;55 per session. Exact cost will be determined at the end of the initial assessment session. <span class="tooltiptext tooltip-bottom">I believe counselling should be accessible for everyone, therefore, I am willing to negotiate cost depending on individual circumstances. Please contact me to discuss.</span> </div>
+                                                                                           </th>
+                                                                                          </tr>
+                                                                                          </tbody>
                                                                                                                     </table>
                                                                                                                     <p>&nbsp;</p>
                                                                                                                 </th>
@@ -515,7 +698,7 @@
                                                                                     <table width="100%" border="0">
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <th width="35%" scope="col">&nbsp;</th>
+                                                                                                <th width="33%" scope="col">&nbsp;</th>
                                                                                                 <th width="33%" scope="col">
                                                                                                     <table width="100%" border="0">
                                                                                                         <tbody>
@@ -524,7 +707,7 @@
                                                                                                                     <table width="100%" class="roundedCorners">
                                                                                                                         <tbody>
                                                                                                                             <tr>
-                                                                                                              <th bgcolor="#483BE9" scope="col"><a href="Tel:07762614830" style="#FFFFFFfont-size: 12px font-size: 12px; font-size: 14px; color: #FFFFFF;">Call Me</a></th>
+                                                                                                      <th bgcolor="#483BE9" scope="col"><a href="Tel:07762614830" style="#FFFFFFfont-size: 12px font-size: 12px; font-size: 14px; color: #FFFFFF;">Call Me</a></th>
                                                                                                                             </tr>
                                                                                                                         </tbody>
                                                                                                                     </table>
@@ -539,15 +722,8 @@
                                                                                     </table>
                                                                                     <p>&nbsp;</p>
                                                                                 </th>
-                                                                                <th width="8%" scope="col">
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
+                                                                                <th width="10%" scope="col">
+
                                                                                 </th>
                                                                             </tr>
                                                                         </tbody>
@@ -608,8 +784,9 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap-4.4.1.js"></script>
-
+		</tr></tbody>
     </table>
+
 </body>
 
 </html>
