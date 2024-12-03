@@ -82,40 +82,8 @@
 
         }
     </style>
-    <style type="text/css">
-        a.tooltip {
-            position: relative;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
 
-        a.tooltip span {
-            display: none;
-        }
 
-        a.tooltip:hover span {
-            position: absolute;
-            top: -90px;
-            font-size: 14px;
-            left: 50px;
-            display: block;
-            width: 120px;
-            color: black;
-            background-color: #FFFFFF;
-            border: 1px solid black;
-            border-radius: 8px;
-            padding: 5px;
-        }
-    </style>
-    <style>
-        /* somehow makes background image resize smoothly */
-        body {
-            font-family: sans-serif;
-            height: 50px;
-
-        }
-    </style>
     <style>
         table.roundedCorners {
             border: 0px solid #FFFFFF;
@@ -149,7 +117,7 @@
             overflow: hidden;
             float: left;
             position: fixed;
-            width: 97%;
+            width: 95%;
             transition: top 1.3s;
 
         }
@@ -296,7 +264,7 @@
         .rounded-circle {
             border-radius: 50% !important;
         }
-	</style>
+    </style>
 		<style>
 .tooltip {
     position: relative;
@@ -507,11 +475,40 @@
     visibility: visible;
 }
 	</style>
+	<style>
+		/* scrolling text css code  */
+.container {
+  overflow: hidden;
+  position: relative;
+}
 
+.container::before {
+  content: '\00a0';
+}
 
+.scrolling {
+  animation: marquee 15s linear infinite;
+  display: block;
+  min-width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
+</style>
 </head>
 
-<body>
+<body><table width="98%" align="center"><tbody>
+	<tr>
     <header>
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
@@ -538,13 +535,16 @@
                     <table width="80%" border="0">
                         <tbody>
                             <tr>
+								
                                 <picture>
-                                    <source media="(min-width: 500px)" srcset="images/long-logo.png">
+                                    <source media="(min-width: 800px)" srcset="images/long-logo.png">
+									<source media="(min-width: 500px)" srcset="images/Logo.png">
                                     <source media="(min-width: 300px)" srcset="images/facebook1.png">
                                     <source media="(min-width: 200px)" srcset="images/Logo-small.jpg">
                                     <img src="images/Logo.png" align="center" width="80%" height="auto" alt>
-									
-								</picture>
+
+                                </picture>
+						
                             </tr>
                         </tbody>
                     </table>
@@ -593,7 +593,7 @@
                                                                         <tbody>
                                                                             <tr>
                                                                                 <th width="10%" height="279" scope="col">&nbsp;</th>
-                                                                                <th width="82%" align="center" valign="top" scope="col">
+                                                                                <th width="80%" align="center" valign="top" scope="col">
                                                                                     <table width="100%" class="roundedCorners">
                                                                                         <tbody>
                                                                                             <tr>
@@ -601,7 +601,7 @@
                                                                                                     <p><u>Contact Information</u></p>
                                                                                                     <p>I'm available for appointments, which can be booked by emailing me or if you prefer, you can telephone me.</p>
                                                                                                     <p><a href="ccs.lizb@gmail.com" style="color: #FFFFFF; font-size: 18px;">email me at:- ccs.lizb@gmail.com</a></p>
-                                                                                                    <p><a href="07762614830">Call me on 07762614830</a></p>
+                                                                                                    <p><a href="tel:07762614830">Call me on 07762614830</a></p>
                                                                                                 </th>
                                                                                             </tr>
                                                                                         </tbody>
@@ -616,15 +616,17 @@
                                                                                                     <table width="100%" border="0">
                                                                                                         <tbody>
                                                                                                             <tr>
-                                                                                                                <th scope="col" width="35%"><table width="54%" height="152" class="roundedCorners">
-                                                                                                                  <tbody>
-                                                                                                                    <tr>
-                                                                                     <th bgcolor="#2E881C" scope="col"> <div class="tooltip">Prices from &pound;55 per session. Exact cost will be determined at the end of the initial assessment session. <span class="tooltiptext tooltip-bottom">I believe counselling should be accessible for everyone, therefore, I am willing to negotiate cost depending on individual circumstances. Please contact me to discuss
-																														</span></div>
-                                                                                                                      </th>
-                                                                                                                    </tr>
-                                                                                                                  </tbody>
-                                                                                                             </table>                                                                                                                  <p>&nbsp;</p>
+                                                                                                                <th scope="col" width="30%">
+                                                                                                                    <table width="54%" height="152" class="roundedCorners">
+                                                                                                                 <tbody>
+                                                                                                                  <tr>
+                                                                                                             <th bgcolor="#2E881C" scope="col">
+                                                                                      <div class="tooltip">Prices from &pound;55 per session. Exact cost will be determined at the end of the initial assessment session. <span class="tooltiptext tooltip-bottom">I believe counselling should be accessible for everyone, therefore, I am willing to negotiate cost depending on individual circumstances. Please contact me to discuss.</span> </div>
+                                                                                           </th>
+                                                                                          </tr>
+                                                                                          </tbody>
+                                                                                                                    </table>
+                                                                                                                    <p>&nbsp;</p>
                                                                                                                 </th>
                                                                                                                 <th scope="col" width="35%">
                                                                                                                     <table width="71%" border="0" class="roundedCorners">
@@ -668,24 +670,25 @@
                                                                                                                     <table width="100%" border="0">
                                                                                                                         <tbody>
                                                                                                                             <tr>
-                                                                                                                                <th width="23%" scope="col">&nbsp;</th>
-                                                                                                                                <th width="54%" scope="col">
-                                                                                                                                    <table width="100%" class="roundedCorners">
-                                                                                                                                        <tbody>
-                                                                                                                                            <tr>
-                                                                                                                                                <th bgcolor="#2E881C" scope="col">
-                                                                                                                                                    <marquee direction="left" width="100%">
-                                                                                                                                                        <p><span style="font-size: 25px" text-align="center">
-                                                                                                                                                                <h1>Appointments are in the Key Wellness Centre, or another venue, if it suits you</h1>
-                                                                                                                                                            </span></p>
+                                                                                    <th width="23%" scope="col">&nbsp;</th>
+                                                                                      <th width="54%" scope="col">
+                                                                                         <table width="100%" class="roundedCorners">
+                                                                                           <tbody>
+                                                                                              <tr>
+                                                                                          <th bgcolor="#2E881C" scope="col">
+	<div class="container">
+  <div class="scrolling">
+    Appointments can be in the Key Wellness Centre, Loughbrickland or other suitable venues...
 
-                                                                                                                                                    </marquee>
-                                                                                                                                                </th>
-                                                                                                                                            </tr>
-                                                                                                                                        </tbody>
-                                                                                                                                    </table>
-                                                                                                                                </th>
-                                                                                                                                <th width="23%" scope="col">&nbsp;</th>
+  </div>
+  <!-- … -->
+</div>
+                                                                                                 </th>
+                                                                                                </tr>
+                                                                                                  </tbody>
+                                                                                                     </table>
+                                                                                            </th>
+                                                                                           <th width="23%" scope="col">&nbsp;</th>
                                                                                                                             </tr>
                                                                                                                         </tbody>
                                                                                                                     </table>
@@ -725,7 +728,7 @@
                                                                                     <table width="100%" border="0">
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <th width="35%" scope="col">&nbsp;</th>
+                                                                                                <th width="33%" scope="col">&nbsp;</th>
                                                                                                 <th width="33%" scope="col">
                                                                                                     <table width="100%" border="0">
                                                                                                         <tbody>
@@ -734,7 +737,7 @@
                                                                                                                     <table width="100%" class="roundedCorners">
                                                                                                                         <tbody>
                                                                                                                             <tr>
-                                                                                                              <th bgcolor="#483BE9" scope="col"><a href="Tel:07762614830" style="#FFFFFFfont-size: 12px font-size: 12px; font-size: 14px; color: #FFFFFF;">Call Me</a></th>
+                                                                                                      <th bgcolor="#483BE9" scope="col"><a href="Tel:07762614830" style="#FFFFFFfont-size: 12px font-size: 12px; font-size: 14px; color: #FFFFFF;">Call Me</a></th>
                                                                                                                             </tr>
                                                                                                                         </tbody>
                                                                                                                     </table>
@@ -749,15 +752,8 @@
                                                                                     </table>
                                                                                     <p>&nbsp;</p>
                                                                                 </th>
-                                                                                <th width="8%" scope="col">
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
-                                                                                    <p>&nbsp;</p>
+                                                                                <th width="10%" scope="col">
+
                                                                                 </th>
                                                                             </tr>
                                                                         </tbody>
@@ -818,8 +814,9 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap-4.4.1.js"></script>
-
+		</tr></tbody>
     </table>
+
 </body>
 
 </html>
