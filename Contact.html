@@ -470,7 +470,7 @@ text-align: center;
 .tooltip:hover .tooltiptext-rightarrow {
     visibility: visible;
 }
-	</style>
+	    </style>
 
 	<style>
 	h1 {
@@ -487,7 +487,129 @@ text-align: center;
   margin-left: -60px;
 }
         </style>
+<style>
+	.background-image{
+    background-image: url('images/still-lake.jpg');
+    background-size: cover;
+    animation: fadeIn 5s;
+    border-radius: 15px;
+		border: 1px solid #FFFFFF;
+    text-align: center;
+	}
+	}
+	@keyframes fadeIn  {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+	</style>
+		<style>
+.fade-in-text {
 
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+        </style>
+<style>
+		/* scrolling text css code  */
+.container {
+  overflow: hidden;
+  position: relative;
+}
+
+.container::before {
+  content: '\00a0';
+}
+
+.scrolling {
+  animation: marquee 15s linear infinite;
+  display: block;
+  min-width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+    -webkit-animation: marquee 15s linear infinite;
+  -moz-animation: marquee 15s linear infinite;
+  -o-animation: marquee 15s linear infinite;
+  -ms-animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+@-webkit-keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+@-moz-keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+@-o-keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+@-ms-keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
+.container1 {  overflow: hidden;
+  position: relative;
+}
+.scrolling1 {  animation: marquee 15s linear infinite;
+  display: block;
+  min-width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+}
+</style>
 
 </head>
 
@@ -570,14 +692,13 @@ text-align: center;
                                                 <th width="80%" scope="col"><table width="100%" border="0">
                                                   <tbody>
                                                     <tr>
-                                                      <th align="center" valign="top" scope="row"><table width="100%" class="roundedCorners">
+                                                      <th align="center" valign="top" scope="row"><table width="100%" border="0"class="background-image">
                                                         <tbody>
                                                           <tr>
-                                                            <th height="229" style="background-image: url(images/still-lake.jpg); background-size: cover;" scope="col"> <p><u>Contact Information</u></p>
+                                                            <th align="center" valign="top" scope="row"><p><u>Contact Information</u></p>
                                                               <p>I'm available for appointments, which can be booked by emailing me or if you prefer, you can telephone me.</p>
                                                               <p><a href="mailto:ccs.lizb@gmail.com" style="color: #FFFFFF; font-size: 18px;">email me at:- ccs.lizb@gmail.com</a></p>
-                                                              <p><a href="Tel:07762614830">Call me on 07762614830</a></p>
-                                                            </th>
+                                                            <p><a href="Tel:07762614830">Call me on 07762614830</a></p></th>
                                                           </tr>
                                                         </tbody>
                                                       </table></th>
@@ -639,12 +760,10 @@ text-align: center;
                                                               <th width="54%" scope="col"><table width="100%" class="roundedCorners">
                                                                 <tbody>
                                                                   <tr>
-                                                                    <th bgcolor="#2E881C" scope="col"> <marquee direction="left" width="100%">
-                                                                      <p>                                                              <span style="font-size: 25px" text-align="center">
-                                                                        <h1>New Clients Welcome</h1>
-                                                                    </span>
-                                                                      </p>
-                                                                      </marquee>
+                                                                    <th bgcolor="#2E881C" scope="col"> <div class="container">
+                                                                      <div class="scrolling"> Appointments are in the Right Key Wellness Centre, Loughbrickland or other suitable venues can be arranged...</div>
+                                                                      <!-- … -->
+                                                                    </div>
                                                                     </th>
                                                                   </tr>
                                                                 </tbody>
@@ -714,13 +833,13 @@ text-align: center;
             </tr>
         </tbody>
 	
-		<script>
+	  <script>
 	$('.tooltip-wrapper').on('touchstart',function(e) {
   $('.tooltip-wrapper').not(this).removeClass('hover');
   $(this).toggleClass('hover');
 });
 	</script>
-		<script>
+	  <script>
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
