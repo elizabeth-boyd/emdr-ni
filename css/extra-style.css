@@ -55,17 +55,17 @@ body {
 	display:block;
 	}
 /* CSS Document */
-@media (min-width: 1600px) {
+@media (min-width: 1300px) {
   p {
-    font-size: 18px;
+    font-size: 17px;
     color: #FFFFFF;
 }
   p2 {
-    font-size: 18px;
+    font-size: 17px;
     color: #FFFFFF;
 }
   a {
-    font-size: 18px;
+    font-size: 17px;
     color: #FFFFFF;
 }
   h2 {
@@ -89,6 +89,10 @@ body {
 	}
 	h1{font-size: 30px;
 	}
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
 	  
 }
 body {
