@@ -28,6 +28,11 @@ body {
   div.myAlex {
 	display:none;
 	}
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
 
 @media (min-width: 601px) {
   p {
@@ -44,7 +49,7 @@ body {
 }
   h2 {font-size: 17px;
 }
-  h1 {font-size: 17px;
+  h1 {font-size: 18px;
 }
   div.myAlex {
 	display:block;
@@ -82,7 +87,7 @@ body {
 	}
 	h2{font-size: 24px;
 	}
-	h1{font-size: 24px;
+	h1{font-size: 30px;
 	}
 	  
 }
@@ -90,10 +95,18 @@ body {
     font-size: 20px;
     /* [disabled]font-size-adjust: 3vw; */
 }
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400
 
-
-
+.leckerli-one-regular {
+  font-family: "Leckerli One", cursive;
+  font-weight: 300;
+  font-style: normal;
 }
+
+
+
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
   div.example {
