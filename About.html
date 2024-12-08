@@ -479,6 +479,87 @@ text-align: center;
 }
 
     </style>
+ <style>
+        .background-image {
+            background-image: url('images/still-lake.jpg');
+            background-size: cover;
+            animation: fadeIn 3s;
+            border-radius: 15px;
+            border: 1px solid #FFFFFF;
+            text-align: center;
+        }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <style>
+        .fade-in-text {
+
+            animation: fadeIn 5s;
+            -webkit-animation: fadeIn 5s;
+            -moz-animation: fadeIn 5s;
+            -o-animation: fadeIn 5s;
+            -ms-animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-ms-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 	<style>
 	h1 {
   text-shadow: 2px 2px 5px red;
@@ -576,7 +657,7 @@ text-align: center;
                                             <tr>
                                                 <th width="10%" scope="col">&nbsp;</th>
                                                 <th width="80%" scope="col">
-                                                    <table width="100%" border="1" style="background-image: url(images/still-lake.jpg); background-size: cover">
+                                                    <table width="100%" border="0" class="background-image">
                                                         <tbody>
                                                             <tr>
                                                                 <th valign="top" scope="col">
